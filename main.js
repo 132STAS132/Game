@@ -61,6 +61,7 @@ class Game {
 
   stop() {
     if (this.isStarted && this.spawnInterval && this.renderInterval) {
+      this.isStarted = false ; 
       clearInterval(this.spawnInterval);
       clearInterval(this.renderInterval);
       this.clearField();
