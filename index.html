@@ -1,33 +1,43 @@
 <doctype html>
   <html>
-
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
   <head>
     <title> Qualium Systems Javascript test task </title>
-
-
     <style>
       canvas {
         margin-bottom: 20px;
-        background: yellow;
+        background: rgb(197, 190, 190);
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        border: 4px double black;
       }
     </style>
   </head>
 
   <body>
+    <div id="wrapper">
+      <div  id="Name">
+          Who has more patience?
+      </div>
 
+      <div id="controls">
+        
+        <button id="start">Start</button>
+
+         <div class="SpecialForScore">
+            <h1 id="score"> 0 </h1> 
+          </div>
+
+        <button id="stop">Stop</button>
+      </div>
     <canvas width="640" height="480" id="canvas"></canvas>
-    <div id="controls">
-      <button id="start">Start</button>
-      <button id="stop">Stop</button>
-    </div>
-    <h1 id="score"></h1>
     <script type="text/javascript" src="main.js"></script>
+    </div>
   </body>
 
   </html>
